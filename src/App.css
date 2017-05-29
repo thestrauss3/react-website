@@ -1,29 +1,16 @@
 .App {
   text-align: center; }
 
+.App-header {
+  height: 10vh;
+  padding: 20px;
+  color: white; }
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 50px;
   float: left;
   margin-left: -20px; }
-
-.App-title {
-  height: 50px;
-  float: left;
-  margin-left: -10px; }
-  .App-title * {
-    margin: 4px 0 0 0;
-    text-align: left; }
-
-.App-header {
-  background-color: #222;
-  height: 10vh;
-  padding: 20px;
-  color: white; }
-
-.App-intro {
-  font-size: large;
-  color: white; }
 
 @keyframes App-logo-spin {
   from {
@@ -31,11 +18,51 @@
   to {
     transform: rotate(360deg); } }
 
+.App-title {
+  z-index: 200;
+  height: 50px;
+  float: left;
+  margin-left: -10px; }
+  .App-title * {
+    margin: 4px 0 0 0;
+    text-align: left; }
+
+.App-body {
+  padding: 0 20px;
+  color: white; }
+
+.about {
+  color: white;
+  font-size: 90%; }
+
+.projects {
+  background-color: white;
+  color: black;
+  width: 100vw;
+  min-height: 100vh;
+  padding-top: 5vh;
+  margin: 0 -20px; }
+
+.separator {
+  background-image: image-url("../public/separator.png");
+  background: image-url("../public/separator.png");
+  height: 9px;
+  z-index: 2; }
+
 #bg-cover {
+  margin-top: -8vh;
   position: fixed;
-  top: 10vh;
+  top: 000%;
   left: 0;
   min-width: 100vw;
-  max-height: 100vh;
+  height: 108vh;
   z-index: -100;
-  filter: brightness(40%) blur(2.5px); }
+  filter: brightness(50%) blur(2.5px); }
+
+@media screen and (min-width: 480px) {
+  .App-header, .App-body {
+    padding: 20px 15vw; }
+  .projects {
+    margin: 0 -15vw;
+    width: 100vw;
+    min-height: 50vh; } }
