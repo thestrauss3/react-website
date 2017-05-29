@@ -8,6 +8,7 @@
   margin-left: -20px; }
 
 .App-title {
+  z-index: 200;
   height: 50px;
   float: left;
   margin-left: -10px; }
@@ -16,10 +17,18 @@
     text-align: left; }
 
 .App-header {
-  background-color: #222;
   height: 10vh;
   padding: 20px;
   color: white; }
+
+.top {
+  height: 10vh;
+  padding: 20px;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  background: linear-gradient(to top, rgba(180, 180, 180, 0), #222222);
+  /*Standard*/ }
 
 .App-intro {
   font-size: large;
@@ -33,7 +42,7 @@
 
 #bg-cover {
   position: fixed;
-  top: 10vh;
+  top: 0;
   left: 0;
   min-width: 100vw;
   max-height: 100vh;

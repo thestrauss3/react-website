@@ -7,9 +7,11 @@
   height: 50px;
   float: left;
   margin-left: -20px;
+  // z-index: -2000;
 }
 
 .App-title {
+  z-index: 200;
   height: 50px;
   float: left;
   margin-left: -10px;
@@ -20,11 +22,17 @@
 }
 
 .App-header {
-  background-color: #222;
   height: 10vh;
   padding: 20px;
   color: white;
-  // opacity: .5;
+}
+.top {
+  height: 10vh;
+  padding: 20px;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  background: linear-gradient(to top, rgba(180,180,180,0), rgba(34,34,34,1)); /*Standard*/
 }
 
 .App-intro {
@@ -39,14 +47,11 @@
 
 #bg-cover {
     position: fixed;
-    top: 10vh;
+    top: 0;
     left: 0;
-    // max-width: 100%;
+    // max-width: 1px;
     min-width: 100vw;
     max-height: 100vh;
     z-index: -100;
     filter: brightness(40%) blur(2.5px);
-    // filter: saturate(50%);
-    // filter:blur(8);
-    // background-blend-mode: hard-light;
 }

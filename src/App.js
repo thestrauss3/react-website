@@ -6,6 +6,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <div className="top">
+      </div>
         <header className="App-header">
           <img alt="bg" src="homeslider.jpg" id="bg-cover" />
           <img src={logo} className="App-logo" alt="logo" />
