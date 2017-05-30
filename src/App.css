@@ -33,7 +33,9 @@
 
 .about {
   color: white;
-  font-size: 90%; }
+  font-size: 90%;
+  padding-bottom: 5vh;
+  min-height: 50vh; }
 
 .projects {
   background-color: white;
@@ -42,6 +44,12 @@
   min-height: 100vh;
   padding-top: 5vh;
   margin: 0 -20px; }
+
+.project-tile {
+  height: 50vh; }
+
+.project-img {
+  width: 80%; }
 
 .separator {
   background-image: image-url("../public/separator.png");
@@ -59,10 +67,12 @@
   z-index: -100;
   filter: brightness(50%) blur(2.5px); }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 720px) {
   .App-header, .App-body {
     padding: 20px 15vw; }
   .projects {
     margin: 0 -15vw;
     width: 100vw;
-    min-height: 50vh; } }
+    min-height: 50vh; }
+  .project-img {
+    width: 40%; } }

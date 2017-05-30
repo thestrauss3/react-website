@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
 
 const ProjectTile = (props) => {
-  var hello = "hello";
+  let tags = props.tags.map((tag, index) => {
+    return(
+      <span>{tag} </span>
+    )
+  })
   return (
-    <div>
-      {hello}
+    <div className="project-tile">
+      <h1>{props.name}</h1>
+      <img className="project-img" src={props.imgSrc} />
+      <p>{props.description}</p>
+      <ul>{tags}</ul>
     </div>
   )
 }

@@ -1,0 +1,18 @@
+{
+  "data": {
+    "projects": [
+      {
+        "name": "Train Spotter",
+        "imgSrc": "trainspotter.png",
+        "description": "A react web app to track train schedules.",
+        "tags": ["Ruby", "Ruby on Rails", "JavaScript", "React.js", "Fetch API", "Foundation", "SASS", "Omniauth"]
+      },
+      {
+        "name": "Nine to Five Guys",
+        "imgSrc": "9to5guys.png",
+        "description": "A Rails and React web app to review burgers.",
+        "tags": ["Ruby", "Ruby on Rails", "JavaScript", "React.js", "Fetch API", "Foundation", "SASS", "Carrier Wave", "Devise"]
+      }
+    ]
+  }
+}

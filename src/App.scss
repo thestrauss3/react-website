@@ -42,8 +42,9 @@
 
 .about {
   color: white;
-  // padding: 0 15px;
   font-size: 90%;
+  padding-bottom: 5vh;
+  min-height: 50vh;
 }
 
 .projects {
@@ -55,11 +56,17 @@
   margin: 0 -20px;
 }
 
+.project-tile {
+  height: 50vh;
+}
+.project-img {
+  width: 80%;
+}
+
 .separator {
   background-image: image-url('../public/separator.png');
   background: image-url('../public/separator.png');
   height: 9px;
-  // background-color: blue;
   z-index: 2;
 }
 
@@ -74,14 +81,16 @@
     filter: brightness(50%) blur(2.5px);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 720px) {
    .App-header, .App-body {
     padding: 20px 15vw;
   }
   .projects {
-    // padding: 0 -15vw;
     margin: 0 -15vw;
     width: 100vw;
     min-height: 50vh;
+  }
+  .project-img {
+    width: 40%;
   }
 }
